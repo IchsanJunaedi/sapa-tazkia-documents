@@ -28,7 +28,7 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 
 ## **3. Technology Stack**
 
-   ###**3.1Frontend Stack**
+   ### **3.1Frontend Stack**
    
 | Komponen           | Teknologi          | Keterangan                                                              |
 |--------------------|--------------------|-------------------------------------------------------------------------|

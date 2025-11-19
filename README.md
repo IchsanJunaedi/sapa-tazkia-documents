@@ -154,9 +154,9 @@ SAPA-TAZKIA/
     │       ├── aiService.js
     │       └── api.js
     └── package.json
+```
 
-
-##**4. Team Member**
+## **4. Team Member**
 
 1. **Muhammad Ichsan Junaedi (Project Manager & Frontend Developer)**  
    [LinkedIn – Muhammad Ichsan Junaedi](https://www.linkedin.com/in/muhammad-ichsan-junaedi-74039b288/)

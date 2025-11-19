@@ -1,11 +1,11 @@
-#**Sapa Tazkia – Web-Based AI Chatbot**
+# **Sapa Tazkia – Web-Based AI Chatbot**
 
 Chatbot akademik berbasis web yang dirancang untuk membantu mahasiswa dan calon pendaftar STMIK Tazkia dalam memperoleh informasi kampus secara cepat, akurat, dan tersedia 24/7. Sistem ini mengintegrasikan teknologi Retrieval-Augmented Generation (RAG), autentikasi mahasiswa, akses database akademik, serta fitur ekspor nilai/transkrip dalam format PDF.
 
-##**1. Deskripsi Proyek**
+## **1. Deskripsi Proyek**
 Sapa Tazkia adalah aplikasi chatbot cerdas yang memanfaatkan Large Language Model (LLM) sebagai asisten virtual kampus. Aplikasi ini menyediakan layanan informasi akademik, administrasi, dan pendaftaran melalui percakapan natural.
 
-##**Fitur utama:**
+## **Fitur utama:**
 1. Chatbot berbasis RAG (jawaban akurat dari dokumen kampus)
 2. Autentikasi mahasiswa menggunakan database akademik
 3. Akses data nilai, IPK, dan riwayat akademik
@@ -14,10 +14,10 @@ Sapa Tazkia adalah aplikasi chatbot cerdas yang memanfaatkan Large Language Mode
 6. Sistem aman, cepat, dan dapat diakses dari berbagai perangkat
 7. Tujuan utama: meningkatkan efisiensi layanan informasi kampus, mengurangi beban staf, serta memberikan akses 24/7 bagi mahasiswa dan calon mahasiswa.
 
-###**2. Arsitektur Sistem**
+### **2. Arsitektur Sistem**
 Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Relational Database, Vector Database, dan AI Processing Layer.
 
-##**Alur kerja sistem:**
+## **Alur kerja sistem:**
 1. User mengirim pertanyaan dari frontend
 2. Backend memvalidasi, menerapkan rate limit, dan melakukan embedding
 3. Sistem melakukan pencarian dokumen dengan RAG melalui Qdrant
@@ -26,7 +26,7 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 6. Backend memproses dan mengirim respon ke frontend
 7. Pendekatan RAG digunakan untuk menghindari hallucination, memastikan jawaban akurat, serta memungkinkan pembaruan dokumen tanpa retrain model.
 
-##**3. Technology Stack**
+## **3. Technology Stack**
 
    ###**3.1Frontend Stack**
    
@@ -39,7 +39,7 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 | UI Component       | shadcn/ui          | Komponen UI modern yang mudah dikustomisasi                             |
 | Routing            | React Router v6    | Navigasi aplikasi tanpa reload halaman                                  |
 
-  ###**3.2 Backend Stack**
+  ### **3.2 Backend Stack**
   
 | Komponen          | Teknologi            | Keterangan                                                              |
 |-------------------|----------------------|-------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 | Password Hashing   | Bcrypt               | Keamanan password dengan hash + salt                                   |
 | PDF Generator      | PDFKit / Puppeteer   | Generate dokumen PDF seperti nilai dan transkrip                       |
 
-   ###**2.3 Database Stack**
+   ### **2.3 Database Stack**
    
 | Komponen            | Teknologi        | Keterangan                                                             |
 |---------------------|------------------|------------------------------------------------------------------------|
@@ -61,7 +61,7 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 | Connection Pooling  | Prisma Pool      | Optimasi koneksi database bawaan Prisma                                |
 
 
-  ###**2.4 DevOps & Infrastruktur**
+  ### **2.4 DevOps & Infrastruktur**
   
 | Komponen                 | Teknologi         | Keterangan                                                              |
 |--------------------------|-------------------|-------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 | Version Control          | Git + GitHub      | Manajemen kode sumber                                                   |
 | SSL/TLS                  | Let's Encrypt     | Enkripsi HTTPS gratis                                                   |
 
-  ###**2.5 Security & Monitoring**
+  ### **2.5 Security & Monitoring**
 
 | Komponen         | Teknologi             | Keterangan                                                              |
 |------------------|------------------------|------------------------------------------------------------------------|
@@ -86,98 +86,90 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 
 
 
-##**3. Struktur Folder**
+## **3. Struktur Folder**
 
 SAPA-TAZKIA/
 │
 ├── backend/
-│   ├── config/
+│   ├── config/               
 │   ├── prisma/
 │   │   ├── schema.prisma
 │   │   └── seed.js
-│   │
 │   ├── src/
 │   │   ├── controllers/
 │   │   │   ├── aiController.js
 │   │   │   ├── authController.js
 │   │   │   └── guestController.js
-│   │   │
 │   │   ├── middleware/
 │   │   │   └── authMiddleware.js
-│   │   │
 │   │   ├── routes/
 │   │   │   ├── aiRoutes.js
 │   │   │   ├── authRoutes.js
 │   │   │   └── guestRoutes.js
-│   │   │
 │   │   ├── services/
 │   │   │   ├── academicService.js
 │   │   │   ├── authService.js
 │   │   │   ├── emailService.js
-│   │   │   ├── geminiService.js
+│   │   │   ├── openaiService.js
 │   │   │   └── pdfService.js
-│   │   │
 │   │   ├── utils/
 │   │   │   └── emailDomainValidator.js
-│   │   │
-│   │   └── app.js
-│   │
-│   ├── server.js
+│   │   └── app.js            
 │   ├── .env
-│   ├── .env.bakk
+│   ├── .gitignore            
+│   ├── server.js             
 │   ├── package.json
 │   └── package-lock.json
 │
 └── frontend/
     ├── public/
-    │
     ├── src/
-    │   ├── api/
-    │   │   ├── aiService.js
-    │   │   └── axiosConfig.js
-    │   │
+    │   ├── assets/           
     │   ├── components/
     │   │   ├── chat/
     │   │   │   ├── ChatInput.jsx
     │   │   │   ├── ChatMessage.jsx
     │   │   │   └── ChatWindow.jsx
-    │   │   │
     │   │   ├── common/
     │   │   │   ├── AuthModal.jsx
     │   │   │   ├── Button.jsx
     │   │   │   ├── GoogleIcon.jsx
     │   │   │   ├── GradientText.jsx
-    │   │   │   └── ProtectedRoute.jsx
-    │   │   │
-    │   │   ├── layout/
-    │   │   │   └── SideBar.jsx
-    │   │   │
-    │   │   └── ConfirmationModal.jsx
-    │   │
+    │   │   │   ├── ProtectedRoute.jsx
+    │   │   │   └── ConfirmationModal.jsx 
+    │   │   └── layouts/      
+    │   │       └── SideBar.jsx
     │   ├── context/
-    │   │   └── AuthContext.js
-    │   │
+    │   │   └── AuthContext.jsx 
+    │   ├── hooks/            
     │   ├── pages/
     │   │   ├── AboutYouPage.jsx
     │   │   ├── AuthCallback.jsx
     │   │   ├── ChatPage.jsx
     │   │   ├── LandingPage.jsx
     │   │   └── LoginPage.jsx
-    │   │
-    │   └── services/
-    │       ├── aiService.js
-    │       └── api.js
-    │
-    └── package.json
+    │   ├── services/         
+    │   │   ├── api.js        
+    │   │   ├── aiService.js  
+    │   │   └── authService.js
+    │   ├── utils/            
+    │   ├── App.jsx
+    │   └── main.jsx
+    ├── .env
+    ├── .gitignore            
+    ├── package.json
+    ├── vite.config.js        
+    └── postcss.config.js     
 
 
 ##**4. Team Member**
-     1. **Muhammad Ichsan Junaedi (Project Manager & Frontend Developer)** : [LinkedIn – Muhammad Ichsan Junaedi](https://www.linkedin.com/in/muhammad-ichsan-junaedi-74039b288/)
-     2. **Rahmawati (Business Analyst)** : [LinkedIn – Rahmawati](https://www.linkedin.com/in/rahmawati-269732281/)
-     3. **Rafly Ariel Hidayat (Backend Developer)** : [LinkedIn – Rafly Ariel Hidayat](https://www.linkedin.com/in/rafly-ariel-hidayat-794406392/)
-     4. **Nabila Nurul Hag (UI UX Designer)**:
+
+**1. Muhammad Ichsan Junaedi (Project Manager & Frontend Developer) : [LinkedIn – Muhammad Ichsan Junaedi](https://www.linkedin.com/in/muhammad-ichsan-junaedi-74039b288/)**
+**2. Rahmawati (Business Analyst)** : [LinkedIn – Rahmawati](https://www.linkedin.com/in/rahmawati-269732281/)**
+**3. Rafly Ariel Hidayat (Backend Developer)** : [LinkedIn – Rafly Ariel Hidayat](https://www.linkedin.com/in/rafly-ariel-hidayat-794406392/)**
+**4. Nabila Nurul Hag (UI UX Designer):**
     
-###**credit by : STMIK TAZKIA BOGOR [LinkedIn – STMIK Tazkia](https://www.linkedin.com/company/stmik-tazkia/)**
+### **credit by : STMIK TAZKIA BOGOR [LinkedIn – STMIK Tazkia](https://www.linkedin.com/company/stmik-tazkia/)**
 
     
 

@@ -167,7 +167,9 @@ SAPA-TAZKIA/
 3. **Rafly Ariel Hidayat (Backend Developer)**  
    [LinkedIn – Rafly Ariel Hidayat](https://www.linkedin.com/in/rafly-ariel-hidayat-794406392/)
 
-4. **Nabila Nurul Hag (UI/UX Designer)**
+4. **Nabila Nurul Haq (UI/UX Designer)**  
+   [LinkedIn – Nabila Nurul Haq](https://www.linkedin.com/in/nabila-nurul-haq-1b0694343/)
+
 
     
 ### **credit by : STMIK TAZKIA BOGOR [LinkedIn – STMIK Tazkia](https://www.linkedin.com/company/stmik-tazkia/)**

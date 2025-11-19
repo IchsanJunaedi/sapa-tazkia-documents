@@ -88,10 +88,11 @@ Sapa Tazkia menggunakan arsitektur modern dengan pemisahan Frontend, Backend, Re
 
 ## **3. Struktur Folder**
 
+```text
 SAPA-TAZKIA/
 │
 ├── backend/
-│   ├── config/               
+│   ├── config/
 │   ├── prisma/
 │   │   ├── schema.prisma
 │   │   └── seed.js
@@ -110,21 +111,23 @@ SAPA-TAZKIA/
 │   │   │   ├── academicService.js
 │   │   │   ├── authService.js
 │   │   │   ├── emailService.js
-│   │   │   ├── openaiService.js
+│   │   │   ├── geminiService.js
 │   │   │   └── pdfService.js
 │   │   ├── utils/
 │   │   │   └── emailDomainValidator.js
-│   │   └── app.js            
+│   │   └── app.js
+│   ├── server.js
 │   ├── .env
-│   ├── .gitignore            
-│   ├── server.js             
+│   ├── .env.bakk
 │   ├── package.json
 │   └── package-lock.json
 │
 └── frontend/
     ├── public/
     ├── src/
-    │   ├── assets/           
+    │   ├── api/
+    │   │   ├── aiService.js
+    │   │   └── axiosConfig.js
     │   ├── components/
     │   │   ├── chat/
     │   │   │   ├── ChatInput.jsx
@@ -135,39 +138,37 @@ SAPA-TAZKIA/
     │   │   │   ├── Button.jsx
     │   │   │   ├── GoogleIcon.jsx
     │   │   │   ├── GradientText.jsx
-    │   │   │   ├── ProtectedRoute.jsx
-    │   │   │   └── ConfirmationModal.jsx 
-    │   │   └── layouts/      
-    │   │       └── SideBar.jsx
+    │   │   │   └── ProtectedRoute.jsx
+    │   │   ├── layout/
+    │   │   │   └── SideBar.jsx
+    │   │   └── ConfirmationModal.jsx
     │   ├── context/
-    │   │   └── AuthContext.jsx 
-    │   ├── hooks/            
+    │   │   └── AuthContext.js
     │   ├── pages/
     │   │   ├── AboutYouPage.jsx
     │   │   ├── AuthCallback.jsx
     │   │   ├── ChatPage.jsx
     │   │   ├── LandingPage.jsx
     │   │   └── LoginPage.jsx
-    │   ├── services/         
-    │   │   ├── api.js        
-    │   │   ├── aiService.js  
-    │   │   └── authService.js
-    │   ├── utils/            
-    │   ├── App.jsx
-    │   └── main.jsx
-    ├── .env
-    ├── .gitignore            
-    ├── package.json
-    ├── vite.config.js        
-    └── postcss.config.js     
+    │   └── services/
+    │       ├── aiService.js
+    │       └── api.js
+    └── package.json
 
 
 ##**4. Team Member**
 
-**1. Muhammad Ichsan Junaedi (Project Manager & Frontend Developer) : [LinkedIn – Muhammad Ichsan Junaedi](https://www.linkedin.com/in/muhammad-ichsan-junaedi-74039b288/)**
-**2. Rahmawati (Business Analyst)** : [LinkedIn – Rahmawati](https://www.linkedin.com/in/rahmawati-269732281/)**
-**3. Rafly Ariel Hidayat (Backend Developer)** : [LinkedIn – Rafly Ariel Hidayat](https://www.linkedin.com/in/rafly-ariel-hidayat-794406392/)**
-**4. Nabila Nurul Hag (UI UX Designer):**
+1. **Muhammad Ichsan Junaedi (Project Manager & Frontend Developer)**  
+   [LinkedIn – Muhammad Ichsan Junaedi](https://www.linkedin.com/in/muhammad-ichsan-junaedi-74039b288/)
+
+2. **Rahmawati (Business Analyst)**  
+   [LinkedIn – Rahmawati](https://www.linkedin.com/in/rahmawati-269732281/)
+
+3. **Rafly Ariel Hidayat (Backend Developer)**  
+   [LinkedIn – Rafly Ariel Hidayat](https://www.linkedin.com/in/rafly-ariel-hidayat-794406392/)
+
+4. **Nabila Nurul Hag (UI/UX Designer)**
+
     
 ### **credit by : STMIK TAZKIA BOGOR [LinkedIn – STMIK Tazkia](https://www.linkedin.com/company/stmik-tazkia/)**
 

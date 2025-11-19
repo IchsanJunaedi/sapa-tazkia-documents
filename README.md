@@ -158,7 +158,7 @@ SAPA-TAZKIA/
 
 ## **4. Team Member**
 
-1. **Muhammad Ichsan Junaedi (Project Manager & Frontend Developer)**  
+1. **Muhammad Ichsan Junaedi (Project Manager & Frontend Developer & Backend Developer)**  
    [LinkedIn – Muhammad Ichsan Junaedi](https://www.linkedin.com/in/muhammad-ichsan-junaedi-74039b288/)
 
 2. **Rahmawati (Business Analyst)**  

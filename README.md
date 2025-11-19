@@ -1,6 +1,6 @@
 # **Sapa Tazkia – Web-Based AI Chatbot**
 
-Chatbot akademik berbasis web yang dirancang untuk membantu mahasiswa dan calon pendaftar STMIK Tazkia dalam memperoleh informasi kampus secara cepat, akurat, dan tersedia 24/7. Sistem ini mengintegrasikan teknologi Retrieval-Augmented Generation (RAG), autentikasi mahasiswa, akses database akademik, serta fitur ekspor nilai/transkrip dalam format PDF.
+Chatbot akademik berbasis web yang dirancang untuk membantu mahasiswa dan calon pendaftar Institusi Tazkia dalam memperoleh informasi kampus secara cepat, akurat, dan tersedia 24/7. Sistem ini mengintegrasikan teknologi Retrieval-Augmented Generation (RAG), autentikasi mahasiswa, akses database akademik, serta fitur ekspor nilai/transkrip dalam format PDF.
 
 ## **1. Deskripsi Proyek**
 Sapa Tazkia adalah aplikasi chatbot cerdas yang memanfaatkan Large Language Model (LLM) sebagai asisten virtual kampus. Aplikasi ini menyediakan layanan informasi akademik, administrasi, dan pendaftaran melalui percakapan natural.
@@ -111,7 +111,7 @@ SAPA-TAZKIA/
 │   │   │   ├── academicService.js
 │   │   │   ├── authService.js
 │   │   │   ├── emailService.js
-│   │   │   ├── geminiService.js
+│   │   │   ├── openaiService.js
 │   │   │   └── pdfService.js
 │   │   ├── utils/
 │   │   │   └── emailDomainValidator.js

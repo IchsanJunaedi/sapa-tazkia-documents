@@ -93,6 +93,13 @@ SAPA-TAZKIA/
 │
 ├── backend/
 │   ├── config/
+│   ├── data/
+│   │   ├── brosur_febs.md
+│   │   ├── brosur_humaniora.md
+│   │   ├── ijarah.md
+│   │   ├── mudharabah.md
+│   │   ├── musyarakah.md
+│   │   ├── murabahah.md
 │   ├── prisma/
 │   │   ├── schema.prisma
 │   │   └── seed.js
@@ -112,6 +119,7 @@ SAPA-TAZKIA/
 │   │   │   ├── authService.js
 │   │   │   ├── emailService.js
 │   │   │   ├── openaiService.js
+│   │   │   └── ragService
 │   │   │   └── pdfService.js
 │   │   ├── utils/
 │   │   │   └── emailDomainValidator.js

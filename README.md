@@ -100,20 +100,28 @@ SAPA-TAZKIA/
 │   │   ├── mudharabah.md
 │   │   ├── musyarakah.md
 │   │   ├── murabahah.md
+│   ├── jobs/
+│   │   ├── rateLimitJobs.js
 │   ├── prisma/
 │   │   ├── schema.prisma
 │   │   └── seed.js
 │   ├── src/
+│   │   ├── config
+│   │   │   ├── QueryExpansionConfig.js
+│   │   │   ├── rateLimitConfig.js
 │   │   ├── controllers/
 │   │   │   ├── aiController.js
 │   │   │   ├── authController.js
 │   │   │   └── guestController.js
+│   │   │   └── rateLimitController.js
 │   │   ├── middleware/
 │   │   │   └── authMiddleware.js
+│   │   │   └── rateLimitMiddleware.js
 │   │   ├── routes/
 │   │   │   ├── aiRoutes.js
 │   │   │   ├── authRoutes.js
 │   │   │   └── guestRoutes.js
+│   │   │   └── rateLimitRoutes.js
 │   │   ├── services/
 │   │   │   ├── academicService.js
 │   │   │   ├── authService.js
@@ -121,12 +129,18 @@ SAPA-TAZKIA/
 │   │   │   ├── openaiService.js
 │   │   │   └── ragService
 │   │   │   └── pdfService.js
+│   │   │   └── rateLimitService.js
+│   │   │   └── redisService.js
 │   │   ├── utils/
 │   │   │   └── emailDomainValidator.js
+│   │   │   └── errorHandler.js
+│   │   │   └── logger.js
+│   │   │   └── rateLimitUtils.js
 │   │   └── app.js
 │   ├── server.js
 │   ├── .env
 │   ├── .env.bakk
+│   ├── reset-redis.js
 │   ├── package.json
 │   └── package-lock.json
 │

@@ -161,6 +161,7 @@ SAPA-TAZKIA/
     │   │   │   ├── GoogleIcon.jsx
     │   │   │   ├── GradientText.jsx
     │   │   │   └── ProtectedRoute.jsx
+    │   │   │   └── RateLimitStatus.jsx
     │   │   ├── layout/
     │   │   │   └── SideBar.jsx
     │   │   └── ConfirmationModal.jsx

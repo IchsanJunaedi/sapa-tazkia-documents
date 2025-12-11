@@ -94,12 +94,15 @@ SAPA-TAZKIA/
 ├── backend/
 │   ├── config/
 │   ├── data/
-│   │   ├── brosur_febs.md
-│   │   ├── brosur_humaniora.md
-│   │   ├── ijarah.md
-│   │   ├── mudharabah.md
-│   │   ├── musyarakah.md
-│   │   ├── murabahah.md
+│   │   ├── brosur_febs.JSON
+│   │   ├── brosur_humaniora.JSON
+│   │   ├── ijarah.JSON
+│   │   ├── mudharabah.JSON
+│   │   ├── musyarakah.JSON
+│   │   ├── murabahah.JSON
+│   │   ├── stmik_profile.JSON
+│   │   ├── program_magister.JSON
+│   │   ├── tazkia_profile.JSON
 │   ├── jobs/
 │   │   ├── rateLimitJobs.js
 │   ├── prisma/
